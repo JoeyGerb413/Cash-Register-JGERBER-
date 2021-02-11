@@ -10,6 +10,12 @@ using System.Windows.Forms;
 using System.Threading;
 using System.Media;
 
+//Joey Gerber
+//Mr. T
+//ICS3U
+//Cash Register for customers of an evil wizard salesman. Sells three items (broadly defined).
+//Calculates necessary prices, taxes and total price of any order a customer may make. Can also print receipt.
+
 namespace Cash_Register__Library_
 {
     public partial class Form1 : Form
