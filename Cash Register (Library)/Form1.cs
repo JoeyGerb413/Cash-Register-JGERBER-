@@ -208,5 +208,10 @@ namespace Cash_Register__Library_
             outputLabelTax.Text = "$0.00";
             outputLabelTotal.Text = "$0.00";
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
