@@ -33,13 +33,13 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.calculateButton = new System.Windows.Forms.Button();
-            this.subTotal = new System.Windows.Forms.Label();
+            this.subTotalField = new System.Windows.Forms.Label();
             this.taxField = new System.Windows.Forms.Label();
             this.totalField = new System.Windows.Forms.Label();
             this.outputLabelSub = new System.Windows.Forms.Label();
             this.outputLabelTax = new System.Windows.Forms.Label();
             this.outputLabelTotal = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.bar = new System.Windows.Forms.Label();
             this.tenderField = new System.Windows.Forms.Label();
             this.input4 = new System.Windows.Forms.TextBox();
             this.receiptButton = new System.Windows.Forms.Button();
@@ -100,16 +100,16 @@
             this.calculateButton.UseVisualStyleBackColor = true;
             this.calculateButton.Click += new System.EventHandler(this.CalculateButton_Click);
             // 
-            // subTotal
+            // subTotalField
             // 
-            this.subTotal.AutoSize = true;
-            this.subTotal.BackColor = System.Drawing.Color.Blue;
-            this.subTotal.ForeColor = System.Drawing.Color.White;
-            this.subTotal.Location = new System.Drawing.Point(19, 128);
-            this.subTotal.Name = "subTotal";
-            this.subTotal.Size = new System.Drawing.Size(52, 13);
-            this.subTotal.TabIndex = 9;
-            this.subTotal.Text = "Sub-total:";
+            this.subTotalField.AutoSize = true;
+            this.subTotalField.BackColor = System.Drawing.Color.Blue;
+            this.subTotalField.ForeColor = System.Drawing.Color.White;
+            this.subTotalField.Location = new System.Drawing.Point(19, 128);
+            this.subTotalField.Name = "subTotalField";
+            this.subTotalField.Size = new System.Drawing.Size(52, 13);
+            this.subTotalField.TabIndex = 9;
+            this.subTotalField.Text = "Sub-total:";
             // 
             // taxField
             // 
@@ -163,14 +163,13 @@
             this.outputLabelTotal.TabIndex = 14;
             this.outputLabelTotal.Text = "$0.00";
             // 
-            // label3
+            // bar
             // 
-            this.label3.BackColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(15, 225);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(233, 23);
-            this.label3.TabIndex = 15;
-            this.label3.Text = "label3";
+            this.bar.BackColor = System.Drawing.Color.DimGray;
+            this.bar.Location = new System.Drawing.Point(15, 225);
+            this.bar.Name = "bar";
+            this.bar.Size = new System.Drawing.Size(233, 23);
+            this.bar.TabIndex = 15;
             // 
             // tenderField
             // 
@@ -235,14 +234,14 @@
             // 
             this.receiptOutput.BackColor = System.Drawing.Color.White;
             this.receiptOutput.Font = new System.Drawing.Font("MS Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.receiptOutput.Location = new System.Drawing.Point(312, 4);
+            this.receiptOutput.Location = new System.Drawing.Point(261, 4);
             this.receiptOutput.Name = "receiptOutput";
             this.receiptOutput.Size = new System.Drawing.Size(437, 375);
             this.receiptOutput.TabIndex = 22;
             // 
             // resetButton
             // 
-            this.resetButton.Location = new System.Drawing.Point(307, 393);
+            this.resetButton.Location = new System.Drawing.Point(265, 393);
             this.resetButton.Name = "resetButton";
             this.resetButton.Size = new System.Drawing.Size(433, 45);
             this.resetButton.TabIndex = 23;
@@ -276,7 +275,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(715, 450);
             this.Controls.Add(this.input3);
             this.Controls.Add(this.input2);
             this.Controls.Add(this.input1);
@@ -288,20 +287,20 @@
             this.Controls.Add(this.receiptButton);
             this.Controls.Add(this.input4);
             this.Controls.Add(this.tenderField);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.bar);
             this.Controls.Add(this.outputLabelTotal);
             this.Controls.Add(this.outputLabelTax);
             this.Controls.Add(this.outputLabelSub);
             this.Controls.Add(this.totalField);
             this.Controls.Add(this.taxField);
-            this.Controls.Add(this.subTotal);
+            this.Controls.Add(this.subTotalField);
             this.Controls.Add(this.calculateButton);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.vileSecrets);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "Xykons Shop of Mysticism";
+            this.Text = "Xykons Emporium of Mystism, Rituals and Items of the Unspeakable Nature";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.input1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.input2)).EndInit();
@@ -317,13 +316,13 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button calculateButton;
-        private System.Windows.Forms.Label subTotal;
+        private System.Windows.Forms.Label subTotalField;
         private System.Windows.Forms.Label taxField;
         private System.Windows.Forms.Label totalField;
         private System.Windows.Forms.Label outputLabelSub;
         private System.Windows.Forms.Label outputLabelTax;
         private System.Windows.Forms.Label outputLabelTotal;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label bar;
         private System.Windows.Forms.Label tenderField;
         private System.Windows.Forms.TextBox input4;
         private System.Windows.Forms.Button receiptButton;

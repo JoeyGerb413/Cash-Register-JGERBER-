@@ -73,7 +73,7 @@ namespace Cash_Register__Library_
         }
 
         private void CalculateChange_Click(object sender, EventArgs e)
-        { 
+        {
             try
             {
                 tendered = Convert.ToInt32(input4.Text);
@@ -101,7 +101,7 @@ namespace Cash_Register__Library_
             receiptOutput.Text += $"\n\n Order # 563";
             this.Refresh();
             Thread.Sleep(2000);
-             player.Play();
+            player.Play();
 
             receiptOutput.Text += $"\n Classified Date";
             this.Refresh();
@@ -153,39 +153,6 @@ namespace Cash_Register__Library_
             Thread.Sleep(2000);
             player.Play();
         }
-
-        private void ResetButton_Click(object sender, EventArgs e)
-        {
-            //Ignore Code in this section, irrellevant, same as code below.
-            amountbovd = 0;
-            amounttds = 0;
-            amountcad = 0;
-
-
-            subtotal = 0;
-            total = 0;
-            tendered = 0;
-            change = 0;
-
-            input1.Text = "0";
-            input2.Text = "0";
-            input3.Text = "0";
-            input4.Text = "0";
-            outputLabelChange.Text = "$0.00";
-            outputLabelSub.Text = "$0.00";
-            outputLabelTax.Text = "$0.00";
-            outputLabelTotal.Text = "$0.00";
-
-
-
-
-
-
-
-
-
-        }
-
         private void ResetButton_Click_1(object sender, EventArgs e)
         {
             //New Order Code.
@@ -207,6 +174,7 @@ namespace Cash_Register__Library_
             outputLabelSub.Text = "$0.00";
             outputLabelTax.Text = "$0.00";
             outputLabelTotal.Text = "$0.00";
+            receiptOutput.Text = "";
         }
 
         private void Form1_Load(object sender, EventArgs e)
