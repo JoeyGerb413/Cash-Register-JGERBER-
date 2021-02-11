@@ -32,9 +32,6 @@
             this.vileSecrets = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.input1 = new System.Windows.Forms.TextBox();
-            this.input2 = new System.Windows.Forms.TextBox();
-            this.input3 = new System.Windows.Forms.TextBox();
             this.calculateButton = new System.Windows.Forms.Button();
             this.subTotal = new System.Windows.Forms.Label();
             this.taxField = new System.Windows.Forms.Label();
@@ -51,6 +48,12 @@
             this.outputLabelChange = new System.Windows.Forms.Label();
             this.receiptOutput = new System.Windows.Forms.Label();
             this.resetButton = new System.Windows.Forms.Button();
+            this.input1 = new System.Windows.Forms.NumericUpDown();
+            this.input2 = new System.Windows.Forms.NumericUpDown();
+            this.input3 = new System.Windows.Forms.NumericUpDown();
+            ((System.ComponentModel.ISupportInitialize)(this.input1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.input2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.input3)).BeginInit();
             this.SuspendLayout();
             // 
             // vileSecrets
@@ -86,27 +89,6 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Accursed Artifact of Doom";
             this.label2.Click += new System.EventHandler(this.Label2_Click);
-            // 
-            // input1
-            // 
-            this.input1.Location = new System.Drawing.Point(135, 6);
-            this.input1.Name = "input1";
-            this.input1.Size = new System.Drawing.Size(113, 20);
-            this.input1.TabIndex = 5;
-            // 
-            // input2
-            // 
-            this.input2.Location = new System.Drawing.Point(135, 30);
-            this.input2.Name = "input2";
-            this.input2.Size = new System.Drawing.Size(113, 20);
-            this.input2.TabIndex = 6;
-            // 
-            // input3
-            // 
-            this.input3.Location = new System.Drawing.Point(135, 54);
-            this.input3.Name = "input3";
-            this.input3.Size = new System.Drawing.Size(113, 20);
-            this.input3.TabIndex = 7;
             // 
             // calculateButton
             // 
@@ -253,7 +235,7 @@
             // 
             this.receiptOutput.BackColor = System.Drawing.Color.White;
             this.receiptOutput.Font = new System.Drawing.Font("MS Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.receiptOutput.Location = new System.Drawing.Point(312, 15);
+            this.receiptOutput.Location = new System.Drawing.Point(312, 4);
             this.receiptOutput.Name = "receiptOutput";
             this.receiptOutput.Size = new System.Drawing.Size(437, 375);
             this.receiptOutput.TabIndex = 22;
@@ -267,12 +249,36 @@
             this.resetButton.Text = "FOR A NEW ORDER";
             this.resetButton.UseVisualStyleBackColor = true;
             // 
+            // input1
+            // 
+            this.input1.Location = new System.Drawing.Point(135, 7);
+            this.input1.Name = "input1";
+            this.input1.Size = new System.Drawing.Size(120, 20);
+            this.input1.TabIndex = 24;
+            // 
+            // input2
+            // 
+            this.input2.Location = new System.Drawing.Point(135, 28);
+            this.input2.Name = "input2";
+            this.input2.Size = new System.Drawing.Size(120, 20);
+            this.input2.TabIndex = 25;
+            // 
+            // input3
+            // 
+            this.input3.Location = new System.Drawing.Point(135, 54);
+            this.input3.Name = "input3";
+            this.input3.Size = new System.Drawing.Size(120, 20);
+            this.input3.TabIndex = 26;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.input3);
+            this.Controls.Add(this.input2);
+            this.Controls.Add(this.input1);
             this.Controls.Add(this.resetButton);
             this.Controls.Add(this.receiptOutput);
             this.Controls.Add(this.outputLabelChange);
@@ -289,15 +295,15 @@
             this.Controls.Add(this.taxField);
             this.Controls.Add(this.subTotal);
             this.Controls.Add(this.calculateButton);
-            this.Controls.Add(this.input3);
-            this.Controls.Add(this.input2);
-            this.Controls.Add(this.input1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.vileSecrets);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Xykons Shop of Mysticism";
+            ((System.ComponentModel.ISupportInitialize)(this.input1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.input2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.input3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -308,9 +314,6 @@
         private System.Windows.Forms.Label vileSecrets;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox input1;
-        private System.Windows.Forms.TextBox input2;
-        private System.Windows.Forms.TextBox input3;
         private System.Windows.Forms.Button calculateButton;
         private System.Windows.Forms.Label subTotal;
         private System.Windows.Forms.Label taxField;
@@ -327,6 +330,9 @@
         private System.Windows.Forms.Label outputLabelChange;
         private System.Windows.Forms.Label receiptOutput;
         private System.Windows.Forms.Button resetButton;
+        private System.Windows.Forms.NumericUpDown input1;
+        private System.Windows.Forms.NumericUpDown input2;
+        private System.Windows.Forms.NumericUpDown input3;
     }
 }
 

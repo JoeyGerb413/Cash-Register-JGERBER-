@@ -22,6 +22,8 @@ namespace Cash_Register__Library_
 
             InitializeComponent();
         }
+
+        //Global Variables
         double pricebovd = 4;
         int amountbovd;
         double pricecad = 11;
@@ -111,7 +113,7 @@ namespace Cash_Register__Library_
 
             player.Play();
 
-            receiptOutput.Text += $"\n\n Books of Vile Darkness: x{amountbovd} @ {(pricebovd).ToString("C")}";
+            receiptOutput.Text += $"\n\n Books of Vile Darkness:  x{amountbovd} @ {(pricebovd).ToString("C")}";
 
             this.Refresh();
             Thread.Sleep(2000);
@@ -125,49 +127,49 @@ namespace Cash_Register__Library_
 
             player.Play();
 
-            receiptOutput.Text += $"\n Tool of Dark Summoning: x{amounttds} @ {(pricetds).ToString("C")}";
+            receiptOutput.Text += $"\n Tool of Dark Summoning:  x{amounttds} @ {(pricetds).ToString("C")}";
 
             this.Refresh();
             Thread.Sleep(2000);
 
             player.Play();
 
-            receiptOutput.Text += $"\n\n Subtotal: {subtotal.ToString("C")}";
+            receiptOutput.Text += $"\n\n Subtotal:                     {subtotal.ToString("C")}";
 
             this.Refresh();
             Thread.Sleep(2000);
 
             player.Play();
 
-            receiptOutput.Text += $"\n Tax: {tax.ToString("C")}";
+            receiptOutput.Text += $"\n Tax:                          {tax.ToString("C")}";
 
             this.Refresh();
             Thread.Sleep(2000);
 
             player.Play();
 
-            receiptOutput.Text += $"\n Total: {total.ToString("C")}";
+            receiptOutput.Text += $"\n Total:                        {total.ToString("C")}";
 
             this.Refresh();
             Thread.Sleep(2000);
 
             player.Play();
 
-            receiptOutput.Text += $"\n\n Tendered: {tendered.ToString("C")}";
+            receiptOutput.Text += $"\n\n Tendered:                     {tendered.ToString("C")}";
 
             this.Refresh();
             Thread.Sleep(2000);
 
             player.Play();
 
-            receiptOutput.Text += $"\n Change: {change.ToString("C")}";
+            receiptOutput.Text += $"\n Change:                       {change.ToString("C")}";
 
             this.Refresh();
             Thread.Sleep(2000);
 
             player.Play();
 
-            receiptOutput.Text += $"\n We hope that our service was sufficient.";
+            receiptOutput.Text += $"\n     We hope that our service was sufficient.";
 
             this.Refresh();
             Thread.Sleep(2000);
@@ -180,15 +182,20 @@ namespace Cash_Register__Library_
             amountbovd = 0;
             amounttds = 0;
             amountcad = 0;
+            subtotal = 0;
+            total = 0;
+            tendered = 0;
+            change = 0;
 
             input1.Text = "";
             input2.Text = "";
             input3.Text = "";
             input4.Text = "";
-            outputLabelSub.Text = $"{subtotal.ToString("C")}";
-            outputLabelTax.Text = $"{tax.ToString("C")}";
-            outputLabelTotal.Text = $"{total.ToString("C")}";
-            outputLabelChange.Text = $"{change.ToString("C")}";
+
+           
+  
+           
+
 
 
         }
