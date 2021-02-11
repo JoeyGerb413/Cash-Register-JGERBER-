@@ -148,7 +148,7 @@ namespace Cash_Register__Library_
             Thread.Sleep(2000);
             player.Play();
 
-            receiptOutput.Text += $"\n     We hope that our service was sufficient.";
+            receiptOutput.Text += $"\n\n     We hope that our service was sufficient.";
             this.Refresh();
             Thread.Sleep(2000);
             player.Play();
