@@ -13,6 +13,7 @@ using System.Media;
 //Joey Gerber
 //Mr. T
 //ICS3U
+//Febuary 11
 //Cash Register for customers of an evil wizard salesman. Sells three items (broadly defined).
 //Calculates necessary prices, taxes and total price of any order a customer may make. Can also print receipt.
 
