@@ -242,12 +242,13 @@
             // 
             // resetButton
             // 
-            this.resetButton.Location = new System.Drawing.Point(316, 393);
+            this.resetButton.Location = new System.Drawing.Point(307, 393);
             this.resetButton.Name = "resetButton";
             this.resetButton.Size = new System.Drawing.Size(433, 45);
             this.resetButton.TabIndex = 23;
             this.resetButton.Text = "FOR A NEW ORDER";
             this.resetButton.UseVisualStyleBackColor = true;
+            this.resetButton.Click += new System.EventHandler(this.ResetButton_Click_1);
             // 
             // input1
             // 
